@@ -1,0 +1,9 @@
+
+.bookmarkList .web{
+    background-image: linear-gradient(#EEE,#FFF);
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- file Bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- my style sheet -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Assigment9 JS</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <h2 class="my-5 fw-bold">Bookmarker</h2>
+      <hr>
+    </header>
+    <div class="bookmark text-center bg-dark-subtle py-5">
+      <h3>Bookmark your favorite sites</h3>
+      <label class="my-4 fw-bold" for="nameWebsite">Site Name</label>
+      <input id="nameWebsite" class="form-control w-75 mx-auto" type="text" placeholder="Bookmark Name">
+      <div id="alertName" class="alert alert-danger w-75 mx-auto fw-bold my-2" role="alert" style="display: none;">
+        Name is required
+      </div>
+
+      <label class="my-4 fw-bold" for="urlWebsite">site URL</label>
+      <input id="urlWebsite" class="form-control w-75 mx-auto" type="text" placeholder="website URL http:example.com">
+      <div id="alertUrl" class="alert alert-danger w-75 mx-auto fw-bold my-2" role="alert" style="display: none;">
+        Url Field is required
+      </div>
+      <button id="Submit" onclick="createBookmark();" class="btn btn-info text-white mt-3 btn-lg">Submit</button>
+    </div>
+    
+  
+    <div id="bookmarkList" class="bookmarkList mt-4">
+    </div>
+  </div>
+
+<footer class="py-3">
+  <div class="container">
+    <hr>
+    <p class="py-2">© 2023 Bookmarker Inc.</p>
+  </div>
+</footer>
+  <script src="./js/index.js"></script>
+</body>
+</html>
